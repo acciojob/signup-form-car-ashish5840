@@ -1,18 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Signup Form</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background-color: #f5f5f5;
-    }
-    form {
-      max-width: 500px;
-      margin: auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px
+<form method="post">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" required placeholder="Name">
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required placeholder="Email">
+
+  <p>Gender:</p>
+  <input type="radio" id="gender_m" name="gender" value="male" required>
+  <label for="gender_m">Male</label>
+
+  <input type="radio" id="gender_f" name="gender" value="female" required>
+  <label for="gender_f">Female</label>
+
+  <label for="cars">Car Brands</label>
+  <select id="cars" name="cars" required>
+    <option value="" disabled selected>--Please choose an option--</option>
+    <option value="tesla">Tesla</option>
+    <option value="bmw">BMW</option>
+    <option value="audi">Audi</option>
+    <option value="toyota">Toyota</option>
+  </select>
+
+  <label for="age">Age</label>
+  <input type="number" id="age" name="age" required placeholder="Age">
+
+  <label for="dob">DOB</label>
+  <input type="date" id="dob" name="dob" required>
+
+  <label for="tel">Phone Number</label>
+  <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx">
+
+  <label for="password">Password</label>
+  <input type="password" id="password" name="password" required placeholder="Password">
+
+  <input type="checkbox" id="tos" name="tos" required>
+  <label for="tos">I agree to the TOS</label>
+
+  <br><br>
+  <button type="submit">Submit</button>
+</form>
